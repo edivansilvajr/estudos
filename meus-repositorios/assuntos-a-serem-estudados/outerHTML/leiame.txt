@@ -1,0 +1,3 @@
+console.log(element.outerHTML)
+
+O comando acima serve para visusalizar o elemento desejado no console em forma de string.

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #808080;
+}
+
+header h1 {
+    text-align: center;
+    padding: 17px 0px;
+}
+
+.material-icons {
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+menu {
+    display: none;
+    list-style-type: none;
+    background-color: #CC8F8F;
+}
+
+menu li {
+    border-bottom: 1px solid #CCCCCC;
+    text-align: center;
+    padding: 7px;
+    color: white;
+}
+
+main {
+    
+    margin: auto;
+}
+
+main h2 {
+    text-align: center;
+    padding: 17px 0px;
+}
+
+main p {
+    text-align: justify;
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer p {
+    font-size: .8em;
+    text-align: center;
+    padding: 2px;
+}

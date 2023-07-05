@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace method</title>
+    <style>
+        .mystyle {
+            width: 100%;
+            padding: 25px;
+            background-color: coral;
+            box-sizing: border-box;
+        }
+
+        .otherstyle {
+            width: 100%;
+            padding: 100px;
+            background-color: blue;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Replace method</h1>
+
+    <h2>Todos os creditos desse exemplo vai para w3schools</h2>
+
+    <p>Clique no botão 'Try it' para alternar entre adicionar e remover o nome da classe "mystyle" do elemento DIV:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <div id="myDiv">
+        Isso é um elemento DIV.
+    </div>
+
+    <script>
+        let element = document.getElementById("myDiv")
+
+        element.classList = 'mystyle'
+
+        function myFunction() {
+            element.classList.replace('mystyle' , 'otherstyle')
+        }
+    </script>
+</body>
+</html>

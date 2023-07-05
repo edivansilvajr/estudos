@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box_menu {
+    height: 100vh;
+    background: url('../imagens/pexels-lucas-meneses-4712464.jpg') no-repeat;
+    background-size: cover;
+}
+
+.sidebar_menu {
+    position: fixed;
+    left: -280px;
+    height: 100vh;
+    width: 280px;
+    background-color: #0091d1;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+
+.sidebar_titulo {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0px 2px 4px #6e38382e;
+}
+
+.sidebar_titulo a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    line-height: 60px;
+}
+
+.menu {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+
+.menu li {
+    margin: 10px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.menu li:hover {
+    background-color: #2ba4d9;
+}
+
+.menu span {
+    color: white;
+    font-size: 25px;
+    padding-right: 8px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.material-icons {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.btn_close {
+    color: white;
+    line-height: 60px;
+    position: absolute;
+    left: 210px;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .sidebar_menu {
+    left: 0px;
+}

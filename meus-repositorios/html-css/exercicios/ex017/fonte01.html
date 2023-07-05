@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm(centímetro), 
+            mm(milímetro), 
+            in(polegada), 
+            pt(ponto), 
+            pc(paica)
+
+            Medidas relativas
+            em(altura em relação a letra m), 
+            ex(altura em relação a letra mx,
+            rem(igual ao "em" só que em relação fonte que está no body), 
+            vw(view width, porcentagem da largura da viewport), 
+            vh(view height porcentagem da altura da viewport), %
+
+            16px geralmente = 1em
+            O padrão dos vavegadores geralmente é 16px
+
+            A recomendação da W3C é usar 'px' e 'em' no font-size:
+            A recomendação do Gustavo Guanabara é usar 'em', pois se adapta melhor em relógios, tablets, celulares etc...
+            */
+            font-size: 1em;
+
+            /* Fonte-weigth: = Peso 
+            define-se o peso da font usando um desses comandos:
+            lighter, normal, bold, bolder ou seja, da fonte mais magrinha até a mais gordinha
+            */
+
+            
+        }
+
+        h1 {
+            /*Esses 4 comandos abaixo poderá ser substituido por apenas 1 comando:
+            font:italic bolder 3em 'Work Sans' sans-serif; exatamente nessa ordem */
+
+            font-style: italic;
+            font-weight: bolder;  
+            font-size: 3em; 
+            font-family: 'Work Sans', sans-serif;
+            
+
+            /*font:italic bolder 3em 'Work Sans' sans-serif; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit et aspernatur repellendus voluptatum, vel inventore. Veniam, similique asperiores illum officiis obcaecati delectus explicabo perferendis esse! Nihil corrupti sint dolorum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, fugiat qui. Assumenda placeat quod cumque perspiciatis, inventore blanditiis modi, neque atque amet sed, voluptatum labore similique quo? Praesentium, aliquid debitis.
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam recusandae quisquam, consequatur rerum delectus sapiente nesciunt corrupti maxime laboriosam, asperiores ut voluptate fuga odit quidem nulla omnis. Voluptate, repellat in.</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui optio eius inventore natus ea harum sequi quisquam nostrum alias, repudiandae eaque illo necessitatibus tempore totam officiis omnis commodi doloremque consectetur!</p>
+</body>
+</html>

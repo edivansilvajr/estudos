@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: darkgray;
+    font-size: 20px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: white;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.main-content {
+    flex: 1 0 auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-areas:
+        "item1 item2 item3"
+        "item4 item4 item4"
+        "item5 item5 item6";
+}
+
+.item {
+    border: 2px solid black;
+    background-color: white;
+}
+
+.item1 {
+    min-width: 250px;
+    grid-area: item1;
+}
+
+.item2 {
+    min-width: 250px;
+    grid-area: item2;
+}
+
+.item3 {
+    min-width: 250px;
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+.item5 {
+    grid-area: item5;
+    min-width: 250px;
+}
+
+.item6 {
+    grid-area: item6;
+    min-width: 250px;
+}
+
+footer {
+    background-color: white;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+@media screen and (max-width: 795px) {
+    .main-content {
+        grid-template-areas:
+            "item1 item1 item1"
+            "item2 item2 item2"
+            "item3 item3 item3"
+            "item4 item4 item4"
+            "item5 item5 item6";
+    }
+
+}
+
+@media screen and (max-width: 535px) {
+    .main-content {
+        grid-template-areas:
+            "item1 item1 item1"
+            "item2 item2 item2"
+            "item3 item3 item3"
+            "item4 item4 item4"
+            "item5 item5 item5"
+            "item6 item6 item6";
+    }
+
+}

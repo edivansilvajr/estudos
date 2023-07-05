@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #89D99D;
+}
+
+input#check {
+    display: none;
+}
+
+input#check:checked ~ #sideBar {
+    left: 0px;
+}
+
+#sideBar {
+    position: fixed;
+    left: -250px;
+
+    width: 250px;
+    height: 100vh;
+    background-color: red;
+    padding: 10px;
+    background-color: #1E5959;
+
+    transition: left .3s;
+}
+
+#sideBar h3 {
+    position: relative;
+    color: white;
+    border-bottom: 1px solid #89D99D;
+    padding: 15px;
+}
+
+#sideBar h3  #closeMenu {
+    position: absolute;
+    left: 85%;
+    cursor: pointer;
+}
+
+
+menu {
+    list-style-type: none;
+    width: 100%;
+    
+}
+
+menu li {
+    padding: 20px 0px 20px 0px;
+    border-radius: 10px;
+}
+
+menu li .material-icons {
+    color: white;
+    padding-left: 15px;
+    vertical-align: middle;
+}
+
+menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+
+menu li:hover {
+    background-color: #3B8C6E;
+}
+
+header {
+    background-color: #0B2B40;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    padding: 17px 0px;
+}
+
+header #iconBurger {
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main {
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+}
+
+main h2 {
+    text-align: center;
+    padding: 17px 0px;
+}
+
+main p {
+    text-align: justify;
+}
+
+footer {
+    background-color: #0B2B40;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding: 2px;
+}

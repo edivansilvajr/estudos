@@ -1,0 +1,1 @@
+Note que a propriedade CSS height do elemento BODY não pode conter o valor 100vh, pois isso trará problemas ao ícone flutuante do whatsapp fazendo com que ele não desça junto com a rolagem da tela de forma suave em certas partes, portanto o valor da propriedade height tem que ser padrão, ou seja AUTO.

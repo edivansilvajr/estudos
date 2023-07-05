@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index-z</title>
+    <style>
+        div {
+            position: absolute;
+            color: white;
+            font-size: 3em;
+            text-align: center;
+            width: 150px;
+            height: 150px;
+        }
+
+        div#quadrado1 {
+            top: 0px;
+            left: 0px;
+            background-color: green;
+        }
+
+        div#quadrado2 {
+            top: 20px;
+            left: 20px;
+            background-color: red;
+            z-index: 1;
+        }
+
+        div#quadrado3 {
+            top: 40px;
+            left: 40px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="quadrado1">1</div>
+    <div id="quadrado2">2</div>
+    <div id="quadrado3">3</div>
+</body>
+</html>

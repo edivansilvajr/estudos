@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: #233eff url('../imagens/cev-landscape.jpg') bottom left no-repeat;
+    font: normal 1.3em arial;
+}
+
+h1 {
+    color: white;
+    padding: 10px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassList em JS</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        div {
+            opacity: 1;
+            width: 500px;
+            height: 200px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            margin: auto;
+
+            transition: all 1s linear;
+        }
+
+        .hidden {
+            opacity: 0;
+        }
+
+        button {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        <h1>Olá mundo !</h1>
+
+        <h1>Tudo bem com você ?</h1>
+    </div>
+
+    <button id="btnEsc">Esconder</button>
+    <button id="btnApa">Aparecer</button>
+
+    <script>
+        let area = document.getElementById('area')
+        let btnEsc = document.getElementById('btnEsc')
+        let btnApa = document.getElementById('btnApa')
+
+        btnEsc.onclick = function () {
+            area.classList.add("hidden")
+        }
+
+        btnApa.onclick = function () {
+            area.classList.remove("hidden")
+        }
+    </script>
+</body>
+</html>

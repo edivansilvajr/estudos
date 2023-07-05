@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal 1.3em arial;
+}
+
+header {
+    background-color: #a4a4a4;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header menu {
+    list-style-type: none;
+    background-color: #808080;
+}
+
+header menu li {
+    display: inline-block;
+    background-color: #3e3e3e;
+    color: white;
+    padding: 5px;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    text-align: justify;
+}
+
+main h2 {
+    padding-top: 17px;
+}
+
+main p {
+    margin: 17px 0px;
+}

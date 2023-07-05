@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopPropagation</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        div.container1 {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+            align-items: center;
+
+            width: 250px;
+            height: 150px;
+            background-color: yellow;
+            border: 1px solid black;
+            margin: auto;
+        }
+
+        div.container2 {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+            align-items: center;
+
+            width: 250px;
+            height: 150px;
+            background-color: yellow;
+            border: 1px solid black;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nesse exemplo não estamos usando o StopPropagation no código</h1>
+
+    <div class="container1">
+        <button id="btn">Clique em mim</button>
+    </div>
+
+    <h1>Nesse exemplo usaremos o StopPropagation no código</h1>
+
+    <div class="container2">
+        <button id="btn2">Clique em mim</button>
+    </div>
+
+    <script>
+        let div1 = document.getElementsByTagName('div')[0]
+        let btn1 = document.getElementById('btn')
+        let div2 = document.getElementsByTagName('div')[1]
+        let btn2 = document.getElementById('btn2')
+
+        div1.onclick = function () {
+            div1.style.backgroundColor = 'red'
+        }
+
+        btn1.onclick = function () {
+            btn1.innerHTML = 'Clicou'
+        }
+
+        // Segunda div, acrescentamos o stopPropagation no código
+        div2.onclick = function () {
+            div2.style.backgroundColor = 'red'
+        }
+
+        btn2.onclick = function (event) {
+            event.stopPropagation()
+            btn2.innerHTML = 'Clicou'
+        }
+    </script>
+</body>
+</html>

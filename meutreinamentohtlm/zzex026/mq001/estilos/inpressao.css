@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Courier New', Courier, monospace
+    
+    ;
+}
+
+header menu {
+    display: none;
+}

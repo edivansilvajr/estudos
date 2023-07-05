@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+header {
+    height: auto;
+}
+
+span#menuIcon {
+    display: none;
+}
+
+menu li {
+    display: inline-block;
+    border: none;
+}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: #CCCCCC;
+    }
+
+    #menuIcon {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu li {
+        display: inline-block;
+        border: none;
+        background-color: #4D4D4D;
+    }
+
+    main {
+        max-width: 800px;
+        background-color: white;
+    }
+}

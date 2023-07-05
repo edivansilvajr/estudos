@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    font-size: 1.7em;
+}
+
+div#iconMenuContainer {
+    display: none;
+}
+
+header > menu > li {
+    display: inline-block;
+    border: none;
+    padding: 10px;
+}
+
+header > menu > li:hover {
+    background-color: #39cf7c;
+    border-radius: 10px;
+    text-decoration: underline;
+    transition: all .5s;
+}
+
+ main > aside > ul {
+    display: flex;
+    justify-content: space-around;
+ }
+
+img {
+    width: 100%;
+}
+
+img#bugDroid {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+}
+
+footer {
+    padding: 5px;
+}
+
+footer > p {
+    font-size: 20px;
+}

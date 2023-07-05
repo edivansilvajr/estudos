@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores</title>
+    <style>
+        body {
+            background-color: red;
+            font: normal 1.5em arial;
+            color: white;
+        }
+
+        input {
+            width: 50px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+
+    <input type="number" id="n1"> +
+    <input type="number" id="n2">
+    <button id="btnSomar">Somar</button>
+
+    <div id="resultado">
+        <p>Resultado</p>
+    </div>
+
+    <script>
+        let txtn1 = document.querySelector('input#n1')
+        let txtn2 = document.querySelector('input#n2')
+        let resultado = document.querySelector('div#resultado')
+        
+        document.querySelector('button#btnSomar').addEventListener('click', () => {
+            let n1 = Number(txtn1.value)
+            let n2 = Number(txtn2.value)
+            let resultadoSoma = n1 + n2
+
+            resultado.innerHTML = `<p>O resultado da soma é ${resultadoSoma}</p>`
+        })
+    </script>
+</body>
+</html>

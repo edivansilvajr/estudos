@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões com animação</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        li {
+            list-style-type: none;
+            padding: 10px;
+        }
+        
+        img {
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        img:hover {
+            border: 2px solid black;
+            transform: translate(-10px, -10px);
+            transition: transform .5s, border 1s;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#"><img src="imagens/logo-facebook.jpg" alt=""></a></li>
+        <li><a href="#"><img src="imagens/logo-github.jpg" alt=""></a></li>
+        <li><a href="#"><img src="imagens/logo-home.jpg" alt=""></a></li>
+        <li><a href="#"><img src="imagens/logo-instagram.jpg" alt=""></a></li>
+        <li><a href="#"><img src="imagens/logo-twitter.jpg" alt=""></a></li>
+        <li><a href="#"><img src="imagens/logo-youtube.jpg" alt=""></a></li>
+    </ul>
+</body>
+</html>

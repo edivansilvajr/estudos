@@ -1,0 +1,1 @@
+Esse repositório é para treinar os Exercícios do curso da OneBitCode do curso full stack em JavaScript.

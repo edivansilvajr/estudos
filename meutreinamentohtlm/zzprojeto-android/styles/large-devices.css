@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body {
+    background-color: #61FFA8;
+    font-size: 1.3em;
+}
+
+header {
+    width: 100vw;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 15px 15px;
+}
