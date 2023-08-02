@@ -11,3 +11,9 @@ while(continuar === 'Sim') {
     contagem ++
     continuar = prompt('Você visitou alguma outra cidade? (Sim/Não)')
 }
+
+alert(
+    'Turista: ' + turista + 
+    '\nQuantidade de cidades visitadas: ' + contagem +
+    '\nCidades visitadas:\n' + cidades
+)
