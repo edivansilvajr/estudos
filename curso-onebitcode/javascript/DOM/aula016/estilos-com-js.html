@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Estilos com Javascript</title>
+
+    <style>
+        .is-light {
+            background-color: #f1f5f9;
+            color: #212529;
+        }
+
+        .is-dark {
+            background-color: #212529;
+            color: #f1f5f9;
+        }
+    </style>
+
+</head>
+
+<body class="is-light">
+    <h1>Manipulando Estilos com Javascript</h1>
+    <hr>
+    <button id="lightBtn">Tema Claro</button>
+    <button id="darkBtn">Tema Escuro</button>
+    <button id="switchBtn">Alternar Tema Claro/Escuro</button>
+    <h2>Título da Página</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sed, labore blanditiis hic perspiciatis error
+        veritatis eum animi aliquam consequuntur non facere sit nisi nam similique at obcaecati odit debitis.
+    </p>
+
+    <script>
+        // Manipulando estilos diretamente pela propriedade style
+        function useLightTheme() {
+            document.body.style.color = '#212529'
+            document.body.style.backgroundColor = '#f1f5f9'
+        }
+
+        function useDarkTheme() {
+            document.body.style.color = '#f1f5f9'
+            document.body.style.backgroundColor = '#212529'
+        }
+
+        // Manipulando estilos através das classes utilizadas pelo CSS
+        function switchTheme() {
+            document.body.classList.toggle('is-light')
+            document.body.classList.toggle('is-dark')
+        }
+
+        // Adicionando os eventos
+        document.getElementById('lightBtn').addEventListener('click', useLightTheme)
+        document.getElementById('darkBtn').addEventListener('click', useDarkTheme)
+        document.getElementById('switchBtn').addEventListener('click', switchTheme)
+    </script>
+</body>
+
+</html>
