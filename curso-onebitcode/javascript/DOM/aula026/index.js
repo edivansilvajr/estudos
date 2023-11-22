@@ -5,7 +5,7 @@ document.getElementById('sessionBtn').addEventListener('click', function () {
     input.value = ''
 })
 
-document.getElementById('readSesssion').addEventListener('click', function () {
+document.getElementById('readSession').addEventListener('click', function () {
     const info = sessionStorage.getItem('info')
     alert('A informação salva é: ' + info)
 })
