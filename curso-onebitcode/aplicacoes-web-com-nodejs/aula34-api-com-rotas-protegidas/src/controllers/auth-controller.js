@@ -1,7 +1,6 @@
+const { JWT_SECRET } = require("../config/environment");
 const users = require("../models/users");
 const jwt = require("jsonwebtoken");
-
-const secretKey = "chave-secreta-jwt";
 
 module.exports = {
     // POST /auth/register
@@ -35,7 +34,7 @@ module.exports = {
         if (user.password !== password) return res.status(400).json({ message: "Invalid credentials" });
 
         const payload = { id: user.id, email: user.email };
-        const token = jwt.sign(payload, secretKey, { expiresIn: "1d" });
+        const token = jwt.sign(payload, JWT_SECRET, { expiresIn: "1d" });
 
         res.json({ token });
     }

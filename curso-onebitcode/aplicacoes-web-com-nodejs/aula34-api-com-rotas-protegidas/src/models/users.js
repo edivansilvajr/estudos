@@ -15,7 +15,7 @@ module.exports = {
         if (userAlreadyRegistered) return null;
 
         const newUser = {
-            id: Math.floor(Math.random() * 999999),
+            id: Math.floor(Math.random() * 999999).toString(),
             name,
             email,
             password,
@@ -32,7 +32,7 @@ module.exports = {
         if (userAlreadyRegistered) return null;
 
         const newUser = {
-            id: Math.floor(Math.random() * 999999),
+            id: Math.floor(Math.random() * 999999).toString(),
             name,
             email,
             password,
@@ -52,4 +52,4 @@ module.exports = {
 
         return deletedUser;
     }
-}
+};
